@@ -2,11 +2,13 @@
 
     <nav class="nav main-nav">
         <div class="container">
-            <ul>
-                <li> <a href="index.html">Home</a> </li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="#">Services</a></li>
-            </ul>
+            <?php 
+                $args = array(
+                    'theme_location' => 'primary'
+                );
+            ?>
+
+            <?php wp_nav_menu($args); ?>
         </div>
     </nav>
 
